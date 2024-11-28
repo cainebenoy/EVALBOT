@@ -1,0 +1,2 @@
+# EVALBOT
+Project for Novathon
