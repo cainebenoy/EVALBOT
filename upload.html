@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Answer Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff; /* Light Blue */
+        }
+
+        .container {
+            background-color: #ffe4e1; /* Light Pink */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #4682b4; /* Steel Blue */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #b22222; /* Fire Brick */
+        }
+
+        input[type="file"] {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #32cd32; /* Lime Green */
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #228b22; /* Forest Green */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Upload Answer Sheet</h2>
+        <form>
+            <label for="answer-sheet">Answer Sheet (IMG):</label>
+            <input type="file" id="answer-sheet" name="answer-sheet" accept=".img" required>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
