@@ -2,7 +2,7 @@ fastapi
 uvicorn
 pytesseract
 pdf2imag
-pinecone-client
+pinecone
 llmware
 sklearn
 ollama
