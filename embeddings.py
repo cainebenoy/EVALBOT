@@ -1,7 +1,7 @@
 import pinecone
-from llmware.configs import LLMWareConfig
+from llmware import LLMWareClient
 from sklearn.metrics.pairwise import cosine_similarity
-from feedback import generate_feedback  # Import the feedback function
+from feedback import generate_feedback  # Import the function from feedback.py
 
 
 # Initialize Pinecone client
@@ -10,7 +10,7 @@ index = pinecone.Index("exam-eval")
 
 def generate_embeddings(text):
     # Generate embeddings from text using LLMWare
-    response = LLMWareConfig.generate_embeddings(text)
+    response = llmware_client.generate_embeddings(text)
     return response['vectors']
 
 def store_embeddings(text, vectors, doc_id):
@@ -37,6 +37,6 @@ def generate_report(student_answers, answer_key):
         key_vectors = generate_embeddings(answer_key[q_id])
         score = evaluate_answer(student_answer, key_vectors)
         reference = retrieve_similar_content(student_answer)[0]['metadata']['text']
-        feedback = generate_feedback(student_answer, reference)  # Now calling the function correctly
+        feedback = generate_feedback(student_answer, reference)  # Use the imported function
         report[q_id] = {"score": score, "feedback": feedback}
     return report
