@@ -28,6 +28,7 @@ This repository contains the implementation of an **AI-driven exam evaluation sy
 ├── main.py               # Entry point for the backend server
 ├── embeddings.py         # Embedding generation, similarity search, and evaluation logic
 ├── ocr.py                # OCR text extraction functionality
+├── feedback.py           # Provides review report based on the answering     
 ├── requirements.txt      # Dependency list
 ├── templates/            # Frontend HTML templates (if applicable)
 ├── static/               # Frontend assets (CSS, JS)
