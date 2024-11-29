@@ -1,8 +1,0 @@
-fastapi
-uvicorn
-pytesseract
-pdf2imag
-pinecone
-llmware
-sklearn
-ollama
