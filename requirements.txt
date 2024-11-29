@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pytesseract
+pdf2imag
+pinecone-client
+llmware
+sklearn
+ollama
