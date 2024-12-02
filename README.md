@@ -1,5 +1,3 @@
-Here's a **GitHub README** tailored for your project: 
-
 ---
 
 # AI-Driven Exam Evaluation System
